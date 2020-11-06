@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   background-color:  hsl(205, 100%, 96%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.container h1{
+   text-align: center;
+   margin-top: 80px;
+   font-weight: bold;
+   letter-spacing: 4.3px;
+}
+
+
+.container input {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -7px;
+   width: 420px;
+   padding: 10px 12px;
+   border-radius: 7px;
+   border: none;
+}
+
+
+.container .thGrid{
+  width: 1000px;
+  margin:50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .thGrid .grid-Item{
+   width: 347px;
+   height: 268px;
+   background-color: #FFF;
+   padding: 4px;
+   margin: 10px;
+   position: relative;
+ }
+
+ .container .thGrid .grid-Item img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+  }
+
+ .container .thGrid .grid-Item:hover img{
+    filter: blur(3px);
+  }
+
+ .container .thGrid .grid-Item h2{
+   position: absolute;
+   bottom: -30px;
+   right: -10px;
+   background-color: #333;
+   color: #FFF;
+   padding: 8px 20px;
+   z-index: 3;
+  }
+
+
+
+.theOpacity {
+    display: none;
+    transition: .6s;
+}
+
